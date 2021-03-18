@@ -62,7 +62,7 @@ and rationales, over 110k unique movie scenes.
 ## 2. R2C 网络
 ![](R2C.jpg)
 
-### 2.1. Grounding
+### 2.1. Grounding@就是结合visual feature来做一下对应的query的表达，和answer-reposne的表达。
 
 我们可以看到这里的定位就是针对tag环节会结合visual feature作为lstm的输入。
 
@@ -72,5 +72,9 @@ and rationales, over 110k unique movie scenes.
 
 ### 2.2. COntextualization
 
-这里TODO。我感觉个人不是特别理解这个模型到底在干嘛。。。
+这里就是使用answr做一个query和visual的attn表达。
+
+### 2.3. Reasoning
+最后将三者混合在一起送到BiLSTM上去做一个模型。
+
 
